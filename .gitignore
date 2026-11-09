@@ -1,0 +1,27 @@
+# Dependências em qualquer pasta
+node_modules/
+**/node_modules/
+
+# Variáveis de Ambiente (Segurança Crítica)
+.env
+.env.*
+**/.env
+
+# Arquivos temporários de Upload do OCR e Backups (Mantém a pasta, ignora fotos e dumps)
+server/uploads/*
+server/uploads/scans/
+!server/uploads/.gitkeep
+server/backups/
+
+# Cache do Expo e React Native
+.expo/
+**/.expo/
+dist/
+web-build/
+
+# Configurações pessoais de editor e Sistema Operacional
+.vscode/
+**/.vscode/
+.DS_Store
+Thumbs.db
+*.log

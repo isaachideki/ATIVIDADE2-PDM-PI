@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "RotuScan Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "inventory": "node scripts/inventory.js",
+    "backup": "node scripts/backup.js",
+    "migrate": "node scripts/migrate-usuarios-to-users.js",
+    "cleanup": "node scripts/cleanupDb.js",
+    "seed:demo": "node scripts/seed-demo.js",
+    "seed:demo:clear": "node scripts/seed-demo.js --clear",
+    "smoke": "node scripts/smoke-test.js",
+    "scans": "node scripts/listar-scans.js",
+    "verify-db": "node scripts/verify-db.js",
+    "migrate:marca-peso": "node scripts/migrate-marca-peso.js",
+    "migrate:historicos": "node scripts/migrate-historicos-to-scanlogs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.4",
+    "multer": "^2.5.0",
+    "node-tesseract-ocr": "^2.2.1",
+    "pg": "^8.20.0",
+    "sharp": "^0.35.5",
+    "sqlite3": "^6.0.1"
+  },
+  "type": "module"
+}
